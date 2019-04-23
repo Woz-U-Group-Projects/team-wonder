@@ -4,24 +4,21 @@ import { Hair } from './hair';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const hairs = [
-      { id: 11, name: 'Short Hair Cuts'},
-      { id: 12, name: 'Medium Hair Cuts' },
-      { id: 13, name: 'Long Hair Cuts' },
-      { id: 14, name: 'Hair Color' },
+
       { id: 15, name: 'Pixie Cut' },
       { id: 16, name: 'Shag' },
-      { id: 17, name: ' Bob' },
+      { id: 17, name: 'Bob' },
       { id: 18, name: 'Layered' },
       { id: 19, name: 'Long Layered' },
       { id: 20, name: 'Short Layered' },
-      { id: 21, name: 'French twist' },
-      { id: 22, name: ' Half up' },
+      { id: 21, name: 'French Twists' },
+      { id: 22, name: 'Half Up' },
       { id: 23, name: 'Twists' },
-      { id: 24, name: 'Braids' },
+      { id: 24, name: 'Braids Hair' },
       { id: 25, name: 'Multicolored'},
-      { id: 26, name: 'Brown,'},
-      { id: 27, name: 'Bright Colors,'},
-      { id: 28, name: 'Black,'},
+      { id: 26, name: 'Brown'},
+      { id: 27, name: 'Bright Colors'},
+      { id: 28, name: 'Black'},
     ];
     return {hairs};
   }

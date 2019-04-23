@@ -1,0 +1,14 @@
+<div id="search-component">
+    <h4>Wonderland Hair Search</h4>
+  
+    <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+  
+    <ul class="search-result">
+      <li *ngFor="let hair of hairs$ | async" >
+        <a routerLink="/detail/{{hair.id}}">
+          {{hair.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+  

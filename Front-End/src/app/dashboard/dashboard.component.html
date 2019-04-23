@@ -1,0 +1,11 @@
+<h3></h3>
+<div class="grid grid-pad">
+  <a *ngFor="let hair of hairs" class="col-1-4"
+      routerLink="/detail/{{hair.id}}">
+    <div class="module hair">
+      <h4>{{hair.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-hair-search></app-hair-search>

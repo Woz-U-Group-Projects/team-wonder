@@ -1,0 +1,21 @@
+<h2>Wonderland Hair</h2>
+
+<div>
+  <label>Wonderland Hair:
+    <input #hairName />
+  </label>
+ 
+  <button (click)="add(hairName.value); hairName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="hairs">
+  <li *ngFor="let hair of hairs">
+    <a routerLink="/detail/{{hair.id}}">
+      <span class="badge">{{hair.id}}</span> {{hair.name}}
+    </a>
+    <button class="delete" title="delete hair"
+      (click)="delete(hair)">x</button>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+<div *ngIf="hair">
+    <h2>{{hair.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hair.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hair.name" placeholder="name"/>
+      </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+
+    <img src="/assets/{{hair.name}}.jpg">
+  </div>
+  

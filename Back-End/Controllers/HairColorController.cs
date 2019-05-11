@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace backEnd.Controllers {
     [Route ("api/[controller]")]
     [ApiController]
@@ -34,6 +35,22 @@ namespace backEnd.Controllers {
      _context.SaveChanges();
      return Ok(hairColor);
    }
+   
+
+  
+
+    [HttpDelete]
+    public async Task<ActionResult<HairColor>> DeleteHairColor (int id){
+      var hairColor = await _context.HairColor.FindAsync (id);
+      if (hairColor == null) {
+        return NotFound();
+      }
+      _context.HairColor.Remove (hairColor);
+      await _context.SaveChangesAsync ();
+      return hairColor;
+    }
+
+  
 
         // GET: HairColor/Details/5
 //         public async Task<IActionResult> Details (long? id) {

@@ -27,6 +27,27 @@ namespace backEnd.Controllers
      // return the list of haircolors
      return Ok(_context.HairCut);
    }
+
+   [HttpPost]
+   public IActionResult Post([FromBody] HairCut hairCut){
+     _context.HairCut.Add(hairCut);
+     _context.SaveChanges();
+     return Ok(hairCut);
+   }
+
+    [HttpDelete]
+    public async Task<ActionResult<HairCut>> DeleteHairCut (int id){
+      var hairCut = await _context.HairCut.FindAsync (id);
+      if (hairCut == null) {
+        return NotFound();
+      }
+      _context.HairCut.Remove (hairCut);
+      await _context.SaveChangesAsync ();
+      return hairCut;
+    }
+
+  
+
         // public async Task<IActionResult> Index()
         // {
         //     return View(await _context.HairCut.ToListAsync());

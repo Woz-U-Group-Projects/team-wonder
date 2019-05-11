@@ -34,7 +34,8 @@ export class HairSearchComponent implements OnInit {
       distinctUntilChanged(),
 
       
-      switchMap((term: string) => this.hairService.searchHairs(term)),
+      switchMap((term: string) => this.hairService.searchHairs(term)), 
     );
-  }
+    
+    }
 }

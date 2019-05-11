@@ -35,6 +35,7 @@ namespace backEnd.Controllers
      return Ok(hairCut);
    }
 
+<<<<<<< HEAD
     [HttpDelete]
     public async Task<ActionResult<HairCut>> DeleteHairCut (int id){
       var hairCut = await _context.HairCut.FindAsync (id);
@@ -48,6 +49,13 @@ namespace backEnd.Controllers
 
   
 
+=======
+   [HttpPut ("{id}")]
+    public void Put (int id, [FromBody] HairCut hairCut) { }
+
+    [HttpDelete ("{id}")]
+    public void Delete (int id) { }
+>>>>>>> afd78231b5a6953a00e352f444c3cfd94b2d4b39
         // public async Task<IActionResult> Index()
         // {
         //     return View(await _context.HairCut.ToListAsync());

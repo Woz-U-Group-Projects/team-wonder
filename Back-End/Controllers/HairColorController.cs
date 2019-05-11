@@ -35,6 +35,12 @@ namespace backEnd.Controllers {
      return Ok(hairColor);
    }
 
+   [HttpPut ("{id}")]
+    public void Put (int id, [FromBody] HairColor hairColor) { }
+
+    [HttpDelete ("{id}")]
+    public void Delete (int id) { }
+
         // GET: HairColor/Details/5
 //         public async Task<IActionResult> Details (long? id) {
 //             if (id == null) {

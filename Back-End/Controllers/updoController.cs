@@ -27,6 +27,13 @@ namespace backEnd.Controllers
      return Ok(_context.updo);
    }
 
+   
+   [HttpPut ("{id}")]
+    public void Put (int id, [FromBody] updo upDo) { }
+
+    [HttpDelete ("{id}")]
+    public void Delete (int id) { }
+
         // GET: updo
         // public async Task<IActionResult> Index()
         // {

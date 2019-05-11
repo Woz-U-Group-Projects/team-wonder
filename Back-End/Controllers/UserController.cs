@@ -26,6 +26,19 @@ namespace backEnd.Controllers
      return Ok(_context.User);
    }
 
+   [HttpPost]
+   public IActionResult Post([FromBody] User user){
+     _context.User.Add(user);
+     _context.SaveChanges();
+     return Ok(user);
+   }
+
+   [HttpPut ("{id}")]
+    public void Put (int id, [FromBody] User user) { }
+
+    [HttpDelete ("{id}")]
+    public void Delete (int id) { }
+
         // GET: User
         // public async Task<IActionResult> Index()
         // {

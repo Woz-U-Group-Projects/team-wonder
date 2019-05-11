@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alina\\Desktop\\BackEndSample\\backEnd\\backEnd.csproj": {}
+    "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\backEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alina\\Desktop\\BackEndSample\\backEnd\\backEnd.csproj": {
+    "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\backEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alina\\Desktop\\BackEndSample\\backEnd\\backEnd.csproj",
+        "projectUniqueName": "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\backEnd.csproj",
         "projectName": "backEnd",
-        "projectPath": "C:\\Users\\alina\\Desktop\\BackEndSample\\backEnd\\backEnd.csproj",
+        "projectPath": "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\backEnd.csproj",
         "packagesPath": "C:\\Users\\alina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alina\\Desktop\\BackEndSample\\backEnd\\obj\\",
+        "outputPath": "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -22,7 +22,7 @@ namespace backEnd.Controllers {
         // public async Task<IActionResult> Index () {
         //     return View (await _context.HairColor.ToListAsync ());
         // }
-        [HttpGet]
+    [HttpGet]
    public IActionResult Get()
    {
      // return the list of haircolors
@@ -35,28 +35,24 @@ namespace backEnd.Controllers {
      _context.SaveChanges();
      return Ok(hairColor);
    }
+
+    [HttpPut]
+    public IActionResult Put([FromBody] HairColor hairColor) {
+      _context.HairColor.Update(hairColor);
+      _context.SaveChanges();
+      return Ok(hairColor);
+    }
    
-
-  
-
     [HttpDelete]
-    public async Task<ActionResult<HairColor>> DeleteHairColor (int id){
-      var hairColor = await _context.HairColor.FindAsync (id);
-      if (hairColor == null) {
-        return NotFound();
+    public IActionResult Delete([FromBody] HairColor hairColor){
+       _context.HairColor.Remove (hairColor);
+       _context.SaveChanges ();
+      return Ok(hairColor);
       }
-      _context.HairColor.Remove (hairColor);
-      await _context.SaveChangesAsync ();
-      return hairColor;
+     
     }
 
   
-
-   [HttpPut ("{id}")]
-    public void Put (int id, [FromBody] HairColor hairColor) { }
-
-    [HttpDelete ("{id}")]
-    public void Delete (int id) { }
 
         // GET: HairColor/Details/5
 //         public async Task<IActionResult> Details (long? id) {
@@ -159,5 +155,5 @@ namespace backEnd.Controllers {
 //         private bool HairColorExists (long id) {
 //             return _context.HairColor.Any (e => e.id == id);
 //         }
-    }
+    
 }

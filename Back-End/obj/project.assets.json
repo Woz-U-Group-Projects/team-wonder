@@ -14348,11 +14348,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\backEnd.csproj",
+      "projectUniqueName": "C:\\Users\\alina\\Desktop\\team-wonder\\Back-End\\backEnd.csproj",
       "projectName": "backEnd",
-      "projectPath": "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\backEnd.csproj",
+      "projectPath": "C:\\Users\\alina\\Desktop\\team-wonder\\Back-End\\backEnd.csproj",
       "packagesPath": "C:\\Users\\alina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alina\\Downloads\\GroupProject\\GroupProject\\Back-End\\obj\\",
+      "outputPath": "C:\\Users\\alina\\Desktop\\team-wonder\\Back-End\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

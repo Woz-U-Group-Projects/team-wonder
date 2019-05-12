@@ -27,7 +27,6 @@ namespace backEnd.Controllers
      return Ok(_context.updo);
    }
 
-<<<<<<< HEAD
    [HttpPost]
    public IActionResult Post([FromBody] updo upDo){
      _context.updo.Add(upDo);
@@ -35,25 +34,19 @@ namespace backEnd.Controllers
      return Ok(upDo);
    }
 
+  [HttpPut]
+    public IActionResult Put([FromBody] updo upDo) {
+      _context.updo.Update(upDo);
+      _context.SaveChanges();
+      return Ok(upDo);
+    }
    
     [HttpDelete]
-    public async Task<ActionResult<updo>> Deleteupdo (int id){
-      var upDo = await _context.updo.FindAsync (id);
-      if (upDo == null) {
-        return NotFound();
+    public IActionResult Delete([FromBody] updo upDo){
+       _context.updo.Remove (upDo);
+       _context.SaveChanges ();
+      return Ok(upDo);
       }
-      _context.updo.Remove (upDo);
-      await _context.SaveChangesAsync ();
-      return upDo;
-    }
-=======
-   
-   [HttpPut ("{id}")]
-    public void Put (int id, [FromBody] updo upDo) { }
-
-    [HttpDelete ("{id}")]
-    public void Delete (int id) { }
->>>>>>> afd78231b5a6953a00e352f444c3cfd94b2d4b39
 
         // GET: updo
         // public async Task<IActionResult> Index()

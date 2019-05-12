@@ -34,17 +34,26 @@ namespace backEnd.Controllers
      return Ok(upDo);
    }
 
+  [HttpPut]
+    public IActionResult Put([FromBody] updo upDo) {
+      _context.updo.Update(upDo);
+      _context.SaveChanges();
+      return Ok(upDo);
+    }
    
     [HttpDelete]
-    public async Task<ActionResult<updo>> Deleteupdo (int id){
-      var upDo = await _context.updo.FindAsync (id);
-      if (upDo == null) {
-        return NotFound();
+    public IActionResult Delete([FromBody] updo upDo){
+       _context.updo.Remove (upDo);
+       _context.SaveChanges ();
+      return Ok(upDo);
       }
+<<<<<<< HEAD
       _context.updo.Remove (upDo);
       await _context.SaveChangesAsync ();
       return upDo;
     }
+=======
+>>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
 
         // GET: updo
         // public async Task<IActionResult> Index()

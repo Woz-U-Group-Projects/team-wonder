@@ -23,6 +23,8 @@ export class HairDetailComponent implements OnInit {
     this.getHair();
   }
 
+  
+
   getHair(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.hairService.getHair(id)

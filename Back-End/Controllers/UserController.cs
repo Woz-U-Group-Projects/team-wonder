@@ -33,6 +33,7 @@ namespace backEnd.Controllers
      return Ok(user);
    }
 
+<<<<<<< HEAD
    [HttpDelete]
     public async Task<ActionResult<User>> DeleteUser (int id){
       var user = await _context.User.FindAsync (id);
@@ -43,6 +44,21 @@ namespace backEnd.Controllers
       await _context.SaveChangesAsync ();
       return user;
     }
+=======
+[HttpPut]
+    public IActionResult Put([FromBody] User user) {
+      _context.User.Update(user);
+      _context.SaveChanges();
+      return Ok(user);
+    }
+   
+    [HttpDelete]
+    public IActionResult Delete([FromBody] User user){
+       _context.User.Remove (user);
+       _context.SaveChanges ();
+      return Ok(user);
+      }
+>>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
 
         // GET: User
         // public async Task<IActionResult> Index()

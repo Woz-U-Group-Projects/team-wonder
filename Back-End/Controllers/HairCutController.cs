@@ -34,20 +34,31 @@ namespace backEnd.Controllers
      _context.SaveChanges();
      return Ok(hairCut);
    }
+<<<<<<< HEAD
 
-    [HttpDelete]
-    public async Task<ActionResult<HairCut>> DeleteHairCut (int id){
-      var hairCut = await _context.HairCut.FindAsync (id);
-      if (hairCut == null) {
-        return NotFound();
-      }
-      _context.HairCut.Remove (hairCut);
-      await _context.SaveChangesAsync ();
-      return hairCut;
+=======
+  [HttpPut]
+    public IActionResult Put([FromBody] HairCut hairCut) {
+      _context.HairCut.Update(hairCut);
+      _context.SaveChanges();
+      return Ok(hairCut);
     }
+   
+>>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
+    [HttpDelete]
+    public IActionResult Delete([FromBody] HairCut hairCut){
+       _context.HairCut.Remove (hairCut);
+       _context.SaveChanges ();
+      return Ok(hairCut);
+      }
+
 
   
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
         // public async Task<IActionResult> Index()
         // {
         //     return View(await _context.HairCut.ToListAsync());

@@ -36,6 +36,7 @@ export class HairSearchComponent implements OnInit {
       
       switchMap((term: string) => this.hairService.searchHairs(term)), 
     );
-    
-    }
+      
+      }
+      
 }

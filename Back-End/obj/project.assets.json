@@ -14348,19 +14348,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Gonzalo\\Desktop\\GroupProject\\back-end\\backEnd.csproj",
       "projectName": "backEnd",
       "projectPath": "C:\\Users\\Gonzalo\\Desktop\\GroupProject\\back-end\\backEnd.csproj",
       "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Gonzalo\\Desktop\\GroupProject\\back-end\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\alina\\Desktop\\team-wonder\\Back-End\\backEnd.csproj",
-      "projectName": "backEnd",
-      "projectPath": "C:\\Users\\alina\\Desktop\\team-wonder\\Back-End\\backEnd.csproj",
-      "packagesPath": "C:\\Users\\alina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alina\\Desktop\\team-wonder\\Back-End\\obj\\",
->>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14435,5 +14427,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Gonzalo\\Desktop\\GroupProject\\back-end\\obj\\backEnd.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

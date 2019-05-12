@@ -47,14 +47,7 @@ namespace backEnd.Controllers
        _context.SaveChanges ();
       return Ok(upDo);
       }
-<<<<<<< HEAD
-      _context.updo.Remove (upDo);
-      await _context.SaveChangesAsync ();
-      return upDo;
-    }
-=======
->>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
-
+      
         // GET: updo
         // public async Task<IActionResult> Index()
         // {

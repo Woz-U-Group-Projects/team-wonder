@@ -34,9 +34,6 @@ namespace backEnd.Controllers
      _context.SaveChanges();
      return Ok(hairCut);
    }
-<<<<<<< HEAD
-
-=======
   [HttpPut]
     public IActionResult Put([FromBody] HairCut hairCut) {
       _context.HairCut.Update(hairCut);
@@ -44,7 +41,6 @@ namespace backEnd.Controllers
       return Ok(hairCut);
     }
    
->>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
     [HttpDelete]
     public IActionResult Delete([FromBody] HairCut hairCut){
        _context.HairCut.Remove (hairCut);
@@ -55,10 +51,6 @@ namespace backEnd.Controllers
 
   
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 21d35f2154a4006ff5f61a6a29cae7a055a07cf6
         // public async Task<IActionResult> Index()
         // {
         //     return View(await _context.HairCut.ToListAsync());
